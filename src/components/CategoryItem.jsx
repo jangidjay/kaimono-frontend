@@ -8,21 +8,12 @@ const Container = styled.div`
   height: 70vh;
   position: relative;
   transition: all 1s;
-
-  &:hover {
-    opacity: 0.9;
-    transform: scale(1.1);
-
-  }
 `
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
-  
-  
 `
 
 const Info = styled.div`
@@ -52,6 +43,12 @@ const Button = styled.button`
   font-weight: 600;
   width: 100px;
   align-self: center;
+  transition: .3s all;
+
+  &:hover {
+    background-color: #999;
+    color: #fff;
+  }
 `
 
 

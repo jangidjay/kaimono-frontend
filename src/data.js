@@ -28,12 +28,12 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://i.shgcdn.com/84c1d7ed-1f10-4730-9ede-7189ed842dfb/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+    img: require("./images/catagory_img_01.jpg"),
     title: "MEN",
   },
   {
     id: 2,
-    img: "https://i.shgcdn.com/afca4b68-8e58-44b7-af99-2d715c7d2ffc/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+    img: require("./images/catagory_img_02.jpg"),
     title: "WOMEN",
   },
   {

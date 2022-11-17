@@ -1,19 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-const Container = styled.div`
-  flex: 1;
-  margin: 3px;
-  height: 70vh;
-  position: relative;
-  transition: all 1s;
-`
-
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(100%);
+  transition: 1s all;
+`
+
+const Container = styled.div`
+  flex: 1;
+  margin: 10px;
+  height: 80vh;
+  position: relative;
+  transition: all 1s;
+
+  &:hover ${Image} {
+    // filter: blur(2px);
+    filter: grayscale(0);
+  }
 `
 
 const Info = styled.div`
@@ -26,6 +32,9 @@ const Info = styled.div`
   flex-direction: column;
   align-item: center;
   justify-content: center;
+
+  
+
 `
 
 const Title = styled.h1`

@@ -6,13 +6,20 @@ import {
 import React from "react";
 import styled from "styled-components";
 
+const Image = styled.img`
+  height: 65%;
+  z-index: 2;
+`;
+
 const Info = styled.div`
   opacity: 0;
-  width: 100%;
-  heigh: 100%;
+  width: 200px;
+  height: 75px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: flex;
@@ -20,11 +27,13 @@ const Info = styled.div`
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
+
+ 
 `;
 
 const Container = styled.div`
   flex: 1 0 21%;
-  margin: 5%;
+  margin: 2%;
   min-width: 280px;
   height: 350px;
   display: flex;
@@ -32,6 +41,8 @@ const Container = styled.div`
   justify-content: center;
   background-color: #fff;
   position: relative;
+
+  // transition: .5s all;
 
   &:hover ${Info} {
     opacity: 1;
@@ -47,10 +58,7 @@ const Circle = styled.div`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
-const Image = styled.img`
-  height: 65%;
-  z-index: 2;
-`;
+
 
 const Icon = styled.div`
   width: 40px;
@@ -63,7 +71,7 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
-    background-color: #e9f5f5;
+    background-color: #bff8ff;
     transform: scale(1.1);
   }
 `;

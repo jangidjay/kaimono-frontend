@@ -31,6 +31,16 @@ const Info = styled.div`
  
 `;
 
+const Circle = styled.div`
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #bff8ff;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease;
+`;
+
 const Container = styled.div`
   flex: 1 0 21%;
   margin: 2%;
@@ -47,16 +57,13 @@ const Container = styled.div`
   &:hover ${Info} {
     opacity: 1;
   }
+
+  &:hover ${Circle} {
+    background-color: #607c80;
+  }
 `;
 
-const Circle = styled.div`
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: #bff8ff;
-  position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-`;
+
 
 
 

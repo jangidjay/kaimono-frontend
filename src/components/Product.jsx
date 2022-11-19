@@ -38,7 +38,7 @@ const Circle = styled.div`
   background-color: #bff8ff;
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 `;
 
 const Container = styled.div`

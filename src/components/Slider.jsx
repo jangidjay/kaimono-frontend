@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
@@ -122,7 +123,7 @@ const Button = styled.button`
   }
 
   &:after {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #fff;
   }
 
@@ -130,7 +131,6 @@ const Button = styled.button`
     z-index: 1;
     position: relative;
   }
-
 `;
 
 //
@@ -223,7 +223,14 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button btn_bg={item.btn_bg}><span>EXPLORE</span></Button>
+              <Link
+                to="/collections"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <Button btn_bg={item.btn_bg}>
+                  <span>EXPLORE</span>
+                </Button>
+              </Link>
             </InfoContainer>
           </Slide>
         ))}

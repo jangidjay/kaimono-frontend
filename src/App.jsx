@@ -7,6 +7,7 @@ import Collections from "./pages/Collections";
 import Product from "./pages/Product";
 import Signin from "./pages/Signin";
 import Search from "./pages/Search";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   )

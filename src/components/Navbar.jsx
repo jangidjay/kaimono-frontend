@@ -21,7 +21,8 @@ const Left = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  width: 170px;
+  // width: 170px;
+  display: inline-block;
 `;
 
 const Center = styled.div`
@@ -116,11 +117,14 @@ const Navbar = () => {
           </SearchContainer>
           <SignIn>
             <Link
-              to="/search"
+              to="/signin"
               style={{ color: "inherit", textDecoration: "none" }}
             >
               SIGN IN
             </Link>
+            {/* <Link to="/register" style={{ color: "inherit", textDecoration: "none" }}>
+              CREATE A NEW ACCOUNT
+            </Link> */}
           </SignIn>
           <Badge>
             <Link
